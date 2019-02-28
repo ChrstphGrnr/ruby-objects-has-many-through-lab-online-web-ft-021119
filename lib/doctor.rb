@@ -27,7 +27,9 @@ class Doctor
 
   def patients
     all_patients = []
-    self.appointments.each {|appointment| all_patients << appointments.patients}
+    self.appointments.each {|appointment| all_patients << appointments.patient}
+    all_patients
+  end
 
 
 end
