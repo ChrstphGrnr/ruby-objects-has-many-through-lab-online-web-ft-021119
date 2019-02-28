@@ -16,6 +16,12 @@ class Patient
   end
 
   def appointments
-    Appointements.all.each do |
+        all_appointments = []     Appointments.all.each do |appointment|
+        if appointment.doctor == self
+          all_appointments << appointment
+        end
+      end
+      all_appointments
+    end
 
 end
