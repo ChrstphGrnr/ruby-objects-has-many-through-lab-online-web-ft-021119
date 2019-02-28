@@ -27,6 +27,7 @@ class Doctor
 
   def patients
     all_patients = []
+    binding.pry
     self.appointments.each {|appointment| all_patients << appointment.patient}
     all_patients
   end
