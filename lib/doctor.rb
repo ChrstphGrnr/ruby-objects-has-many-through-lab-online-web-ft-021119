@@ -1,5 +1,5 @@
 class Doctor
-  attr_accessor :name, :patients
+  attr_accessor :name,
   @@all = []
 
   def initialize(name)
@@ -27,7 +27,7 @@ class Doctor
 
   def patients
     all_patients = []
-    self.appointments.each {|appointment| all_patients << appointments.patient}
+    self.appointments.each {|appointment| all_patients << appointment.patient}
     all_patients
   end
 
