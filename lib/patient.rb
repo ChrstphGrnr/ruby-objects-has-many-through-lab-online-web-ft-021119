@@ -17,7 +17,7 @@ class Patient
 
   def appointments
     all_appointments = []
-    Appointments.all.each do |appointment|
+    Appointment.all.each do |appointment|
       if appointment.patient == self
         all_appointments << appointment
       end
